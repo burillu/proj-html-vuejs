@@ -1,8 +1,8 @@
 <template>
     <AppHero />
     <AppPresent />
-    <AppFeat />
     <AppStats />
+    <AppFeat />
     <AppOurProcess />
     <AppOurTeam />
     <AppWhyUs />

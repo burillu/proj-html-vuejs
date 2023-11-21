@@ -1,10 +1,10 @@
 <template>
-    <section class="my-bg-secondary my-text-primary">
+    <section class="my-bg-secondary my-text-primary mb-5">
         <div class="container pt-5">
             <div class="row">
                 <div class="col-3">
                     <div class="img-container">
-                        <img src="../../assets/images/smart.png" alt="smart">
+                        <img src="../../assets/images/smarttwo.png" alt="smart">
                     </div>
                 </div>
                 <div class="col d-flex flex-column align-items-start">
@@ -72,15 +72,19 @@ div.card {
 
 section {
     position: relative;
+    height: 100vh;
+
 }
 
 .img-container {
-    position: absolute;
-    left: 0;
-
     img {
-        width: 30em;
-
+        position: absolute;
+        left: -25%;
+        top: -30%;
+        width: 70%;
     }
+
+
+
 }
 </style>
