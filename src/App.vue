@@ -1,12 +1,23 @@
 <template>
-  <div>
-    <h1 class="text-center">Hello world <i class="fa-solid fa-wifi fa-shake"></i></h1>
-  </div>
+  <header>
+    <AppHeader />
+  </header>
+  <main>
+    <AppMain />
+  </main>
+  <footer>
+    <AppFooter />
+  </footer>
 </template>
 
 <script>
+import AppFooter from './components/footer/AppFooter.vue';
+import AppHeader from './components/header/AppHeader.vue';
+import AppMain from './components/main/AppMain.vue';
+
 export default {
-  name: 'App'
+  name: "App",
+  components: { AppMain, AppHeader, AppFooter }
 }
 </script>
 
