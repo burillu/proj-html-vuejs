@@ -29,23 +29,23 @@ npm run build
 ```
 ### Milestone 0
 - Progettazione con Figma (preparazione delle variabili, schema del layout con la suddivisione delle varie sezioni);
--creazione della repo : proj-html-vuejs
+- creazione della repo : proj-html-vuejs
 - Scaffolding con vite;
 - impostazione del font (Chakra Petch);
 -caricamento di Bootstrap e fontawesome;
 
 ### Milestone 1
 
--Creazione delle macroaree (header, main, footer);
--impostazione della struttura base di ogni macroarea e successivamente suddividere in componenti;
--cercare la posizione approsimativa dei vari oggetti che compongono l’hero(senza pensare alle animazioni);
+- Creazione delle macroaree (header, main, footer);
+- impostazione della struttura base di ogni macroarea e successivamente suddividere in componenti;
+- cercare la posizione approsimativa dei vari oggetti che compongono l’hero(senza pensare alle animazioni);
 - impostare i caroselli;
 
 Fine Primo giorno;
 
 ### Milestone 2
 
--impostare dei dati (array di oggetti ) per poter creare dinamicamente l’header ed il footer
+- impostare dei dati (array di oggetti ) per poter creare dinamicamente l’header ed il footer
 - stessa cosa per i caroselli creati come componenti a parte;
 
 ### Milestone 3
@@ -57,14 +57,14 @@ Fine secondo giorno;
 
 ### Milestone 4
 
--migliorare la grafica;
--aggiunta degli effetti di comparsa quando la sezione è in primo piano;
+- migliorare la grafica;
+- aggiunta degli effetti di comparsa quando la sezione è in primo piano;
 
 ### Milestone 5
 
--la freccetta che comparirà in basso a destra riporterà il primo piano sulla prima pagina;
--riprodurre i vari effetti hover sulle immagini, e sui pulsanti;
--riprodurre animazioni dei pianeti rotanti e omini che fluttuano
--animazione dei bottoni play che pulsano;
+- la freccetta che comparirà in basso a destra riporterà il primo piano sulla prima pagina;
+- riprodurre i vari effetti hover sulle immagini, e sui pulsanti;
+- riprodurre animazioni dei pianeti rotanti e omini che fluttuano
+- animazione dei bottoni play che pulsano;
 
 Fine Terzo giorno (giovedì 23/11 alle ore 18:00);
