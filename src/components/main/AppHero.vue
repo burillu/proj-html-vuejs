@@ -9,8 +9,10 @@
             <span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat, incidunt?</span><br>
             <button class="my-btn my-btn-light">Start any</button>
             <button class="my-btn my-btn-primary"> any</button>
+            <img class="my-img-middle" src="../../assets/images/middle.png" alt=" img-middle">
         </div>
         <div>
+
             <img class="img-shape" src="../../assets/images/bottom-shape.png" alt="shape-bottom">
         </div>
     </section>
@@ -30,11 +32,19 @@ section {
 }
 
 .img-shape {
-    width: 100%;
+    //width: 100%;
     height: 160px;
     position: absolute;
     bottom: 0;
     left: 0;
 
+
+}
+
+.my-img-middle {
+    width: 100%;
+    // padding-bottom: 160px;
+    position: relative;
+    z-index: 10;
 }
 </style>
