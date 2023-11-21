@@ -10,6 +10,9 @@
             <button class="my-btn my-btn-light">Start any</button>
             <button class="my-btn my-btn-primary"> any</button>
         </div>
+        <div>
+            <img class="img-shape" src="../../assets/images/bottom-shape.png" alt="shape-bottom">
+        </div>
     </section>
 </template>
 
@@ -23,5 +26,15 @@ export default {
 <style lang="scss" scoped>
 section {
     height: 100vh;
+    position: relative;
+}
+
+.img-shape {
+    width: 100%;
+    height: 160px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+
 }
 </style>
