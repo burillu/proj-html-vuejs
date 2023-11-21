@@ -1,4 +1,7 @@
+@use './partials/variables' as *;
+
 @import 'bootstrap/scss/bootstrap.scss';
+
 
 $fa-font-path: '../webfonts';
 @import '@fortawesome/fontawesome-free/scss/regular.scss';
@@ -10,4 +13,67 @@ $fa-font-path: '../webfonts';
 
 body {
   font-family: 'Chakra Petch', sans-serif;
+}
+
+// BackGround color Class
+.my-bg-primary {
+  background-color: $color-my-primary;
+}
+
+.my-bg-secondary {
+  background-color: $color-my-secondary;
+}
+
+.my-bg-terciary {
+  background-color: $color-my-terciary;
+}
+
+.my-bg-quaternary {
+  background-color: $color-my-quaternary;
+}
+
+.my-bg-gray {
+  background-color: $color-my-gray;
+}
+
+.my-bg-jolly {
+  background-color: $color-my-jolly;
+}
+
+// Background image
+.my-bg-hero {
+  background-image: url('./images/banner-bg.png');
+  background-size: cover;
+}
+
+//text color class
+
+.my-text-contrast {
+  color: $color-my-contrast;
+}
+
+.my-text-primary {
+  color: $color-my-primary;
+}
+
+.my-text-secondary {
+  color: $color-my-secondary
+}
+
+.my-text-terciary {
+  color: $color-my-terciary;
+}
+
+//button class
+.my-btn {
+  border-radius: 20px;
+  padding: 5px 15px;
+}
+
+.my-btn-light {
+  background-color: $color-my-bg-btn;
+}
+
+.my-btn-primary {
+  background-color: $color-my-primary;
 }
