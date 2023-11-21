@@ -1,12 +1,16 @@
 <template>
     <section class="my-bg-hero my-text-secondary">
         <div class="container text-center">
-            <span class="my-text-contrast fw-bold">
-                Imagine, Create, Esperience
-            </span>
-            <h1 class="fw-bold">We Animate <br>
-                With Ninja-Like Precision</h1>
-            <span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat, incidunt?</span><br>
+            <div class="title-section mb-3">
+                <span class="my-text-contrast fw-bold">
+                    Imagine, Create, Esperience
+                </span>
+                <h1 class="fw-bold">We Animate <br>
+                    With Ninja-Like Precision</h1>
+                <span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat, incidunt?</span>
+            </div>
+
+
             <button class="my-btn my-btn-light">Start any</button>
             <button class="my-btn my-btn-primary"> any</button>
             <img class="my-img-middle" src="../../assets/images/middle.png" alt=" img-middle">
