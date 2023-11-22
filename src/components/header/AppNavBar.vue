@@ -5,56 +5,17 @@
         </div>
         <nav class="navbar navbar-expand-lg">
             <div class="container-fluid">
-
-
                 <div class=" " id="navbarNavDropdown">
                     <ul class="navbar-nav fw-bold ">
-
                         <li class="nav-item" v-for="item in tabsArray">
                             <a class="nav-link" :class="classTextColor" aria-current="page" :href="item.href">{{ item.title
                             }}</a>
                         </li>
-                        <!-- 
-
-                        <li class="nav-item  ">
-                            <a class="nav-link" :class="classTextColor" aria-current="page" href="#">Home</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">About Us</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Portfolio</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#" role="button" aria-expanded="false">
-                                Our Process
-                            </a>
-
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#" role="button" aria-expanded="false">
-                                Pricing
-                            </a>
-
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#" role="button" aria-expanded="false">
-                                Blog
-                            </a>
-
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#" role="button" aria-expanded="false">
-                                Contact
-                            </a>
-
-                        </li> -->
                         <li v-if="btn" class="nav-item">
                             <button class="my-btn my-btn-light" :class="btn.classBg">
                                 {{ btn.title }}
                             </button>
                         </li>
-
                     </ul>
                 </div>
             </div>
@@ -77,8 +38,4 @@ export default {
 
 <style lang="scss" scoped>
 @use '../../assets/styles/partials/variables' as *;
-
-// li>a {
-//     color: $color-my-secondary;
-// }
 </style>

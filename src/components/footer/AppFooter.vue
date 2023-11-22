@@ -1,16 +1,18 @@
 <template>
-    <AppNavBar :classTextColor="classTextColor" :src="srcLogo" />
+    <AppNavBar :classTextColor="store.navBarFooter.classText" :src="store.navBarFooter.srcLogo"
+        :tabsArray="store.navBarFooter.tabs" />
 </template>
 
 <script>
 import AppNavBar from '../header/AppNavBar.vue';
+import { store } from '../../data/store';
 
 export default {
     name: "AppFooter",
     data() {
         return {
-            classTextColor: 'my-text-primary',
-            srcLogo: './images/footer-logo.png'
+            store,
+
         }
     },
     components: { AppNavBar }
