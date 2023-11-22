@@ -35,7 +35,7 @@ export default {
 
 <style lang="scss" scoped>
 div.card {
-    width: 15rem;
+    width: 13rem;
 }
 
 section {
