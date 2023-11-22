@@ -62,3 +62,5 @@ div.row {
     transform: translateX(-228px);
 }
 </style>
+
+Milestone 2 completed
