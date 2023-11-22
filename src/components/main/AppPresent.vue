@@ -8,14 +8,7 @@
                     </div>
                 </div>
                 <div class="col d-flex flex-column align-items-start">
-                    <div class="title-section mb-3">
-                        <span class="my-text-terciary fw-bold">
-                            Imagine, Create, Esperience
-                        </span>
-                        <h2 class="fw-bold">We Animate <br>
-                            With Ninja-Like Precision</h2>
-                        <span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat, incidunt?</span>
-                    </div>
+                    <AppTitleSection />
                     <div class="row">
                         <div class="col-4">
                             <div class="card">
@@ -60,8 +53,11 @@
 </template>
 
 <script>
+import AppTitleSection from './AppTitleSection.vue';
+
 export default {
-    name: 'AppPresent'
+    name: "AppPresent",
+    components: { AppTitleSection }
 }
 </script>
 

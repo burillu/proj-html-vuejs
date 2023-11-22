@@ -1,13 +1,25 @@
 <template>
-    <div>
-        <h2> Featured</h2>
+    <div class="container">
+        <AppTitleSection />
+        <div class="row gy-3">
+            <div v-for="item in 4" class="col-6">
+                <img :src="'./images/middle.png'" alt="middle">
+            </div>
+        </div>
     </div>
 </template>
 
 <script>
+import AppTitleSection from './AppTitleSection.vue';
+
 export default {
-    name: 'AppFeat'
+    name: "AppFeat",
+    components: { AppTitleSection }
 }
 </script>
 
-<style lang="scss" scoped></style>
+<style lang="scss" scoped>
+div.col-6>img {
+    width: 100%;
+}
+</style>
