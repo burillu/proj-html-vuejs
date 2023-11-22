@@ -1,6 +1,6 @@
 <template>
     <section>
-        <div class="container">
+        <div class="container py-5">
             <AppTitleSection />
             <div class="row row-cols-5 justify-content-between">
                 <div v-for="item in 5" class="col-2 ">
