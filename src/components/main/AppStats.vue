@@ -2,7 +2,7 @@
     <section class="my-bg-counter my-text-secondary text-center fw-bold">
         <div class="container">
             <h2 class="fw-bold">
-                Anidio QUick Facts
+                Anidio Quick Facts
             </h2>
             <div class="row justify-content-between ">
                 <div class="col-2 rounded-3 border d-flex flex-column justify-content-center align-items-center py-2"
