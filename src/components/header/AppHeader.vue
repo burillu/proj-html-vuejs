@@ -1,20 +1,23 @@
 <template>
     <div class="my-bg-primary ">
-        <AppNavBar :classTextColor="classTextColor" :src="srcLogo" />
+        <AppNavBar :classTextColor="store.navBarHeader.classText" :src="store.navBarHeader.srcLogo"
+            :tabsArray="store.navBarHeader.tabs" />
 
     </div>
 </template>
 
 <script>
 import AppNavBar from './AppNavBar.vue';
+import { store } from '../../data/store';
 
 export default {
     name: "AppHeader",
     components: { AppNavBar },
     data() {
         return {
-            classTextColor: 'my-text-secondary',
-            srcLogo: './images/logo.png'
+            store,
+
+
         }
     }
 }
