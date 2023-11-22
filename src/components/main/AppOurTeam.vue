@@ -1,12 +1,23 @@
 <template>
-    <div>
-        <h2>Our Team</h2>
-    </div>
+    <section class="py-5">
+        <div class="container">
+            <AppTitleSection />
+            <div class="row justify-content-between">
+                <div v-for="items in 3" class="col-3">
+                    <AppCard />
+                </div>
+            </div>
+        </div>
+    </section>
 </template>
 
 <script>
+import AppCard from './AppCard.vue';
+import AppTitleSection from './AppTitleSection.vue';
+
 export default {
-    name: 'AppOurTeam'
+    name: "AppOurTeam",
+    components: { AppTitleSection, AppCard }
 }
 </script>
 
