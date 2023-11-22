@@ -3,7 +3,7 @@
         <AppTitleSection />
         <div class="row gy-3">
             <div v-for="item in 4" class="col-6">
-                <img :src="'./images/middle.png'" alt="middle">
+                <img :src="`./images/work${item}.png`" :alt="'work' + item">
             </div>
         </div>
     </div>
