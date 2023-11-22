@@ -9,6 +9,13 @@
 
                 <div class=" " id="navbarNavDropdown">
                     <ul class="navbar-nav fw-bold ">
+
+                        <li class="nav-item" v-for="item in tabsArray">
+                            <a class="nav-link" :class="classTextColor" aria-current="page"
+                                :href="item.href">{{ item.title }}</a>
+                        </li>
+                        <!-- 
+
                         <li class="nav-item  ">
                             <a class="nav-link" :class="classTextColor" aria-current="page" href="#">Home</a>
                         </li>
@@ -41,7 +48,7 @@
                                 Contact
                             </a>
 
-                        </li>
+                        </li> -->
                         <li class="nav-item">
                             <button class="my-btn my-btn-light">
                                 Get a Quote
@@ -60,7 +67,8 @@ export default {
     name: 'AppNavBar',
     props: {
         src: String,
-        classTextColor: String
+        classTextColor: String,
+        tabsArray: Array
     }
 
 }
