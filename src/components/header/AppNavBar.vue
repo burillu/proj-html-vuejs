@@ -11,8 +11,8 @@
                     <ul class="navbar-nav fw-bold ">
 
                         <li class="nav-item" v-for="item in tabsArray">
-                            <a class="nav-link" :class="classTextColor" aria-current="page"
-                                :href="item.href">{{ item.title }}</a>
+                            <a class="nav-link" :class="classTextColor" aria-current="page" :href="item.href">{{ item.title
+                            }}</a>
                         </li>
                         <!-- 
 
@@ -49,9 +49,9 @@
                             </a>
 
                         </li> -->
-                        <li class="nav-item">
-                            <button class="my-btn my-btn-light">
-                                Get a Quote
+                        <li v-if="btn" class="nav-item">
+                            <button class="my-btn my-btn-light" :class="btn.classBg">
+                                {{ btn.title }}
                             </button>
                         </li>
 
@@ -68,7 +68,8 @@ export default {
     props: {
         src: String,
         classTextColor: String,
-        tabsArray: Array
+        tabsArray: Array,
+        btn: Array
     }
 
 }

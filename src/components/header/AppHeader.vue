@@ -1,7 +1,7 @@
 <template>
     <div class="my-bg-primary ">
         <AppNavBar :classTextColor="store.navBarHeader.classText" :src="store.navBarHeader.srcLogo"
-            :tabsArray="store.navBarHeader.tabs" />
+            :tabsArray="store.navBarHeader.tabs" :btn="store.navBarHeader.btn" />
 
     </div>
 </template>
