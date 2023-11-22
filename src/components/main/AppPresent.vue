@@ -8,7 +8,7 @@
                     </div>
                 </div>
                 <div class="col d-flex flex-column align-items-start">
-                    <AppTitleSection />
+                    <AppTitleSection :sectionProps="store.titleSection.present" />
                     <div class="row">
                         <div v-for="item in 3" class="col-4">
                             <AppCard />
@@ -24,12 +24,18 @@
 </template>
 
 <script>
+import { store } from '../../data/store';
 import AppCard from './AppCard.vue';
 import AppTitleSection from './AppTitleSection.vue';
 
 export default {
     name: "AppPresent",
-    components: { AppTitleSection, AppCard }
+    components: { AppTitleSection, AppCard },
+    data() {
+        return {
+            store
+        }
+    }
 }
 </script>
 

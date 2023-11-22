@@ -1,7 +1,7 @@
 <template>
     <section>
         <div class="container py-5">
-            <AppTitleSection />
+            <AppTitleSection :sectionProps="store.titleSection.whyUs" />
             <div class="row row-cols-5 justify-content-between">
                 <div v-for="item in 5" class="col-2 ">
 
@@ -13,11 +13,17 @@
 </template>
 
 <script>
+import { store } from '../../data/store';
 import AppTitleSection from './AppTitleSection.vue';
 
 export default {
     name: "AppWhyUs",
-    components: { AppTitleSection }
+    components: { AppTitleSection },
+    data() {
+        return {
+            store
+        }
+    }
 }
 </script>
 

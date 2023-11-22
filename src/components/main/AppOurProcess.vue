@@ -6,7 +6,7 @@
                     <img :src="'./images/process-thumb.png'" alt="process-thumb">
                 </div>
                 <div class="col-6">
-                    <AppTitleSection />
+                    <AppTitleSection :sectionProps="store.titleSection.ourProcess" />
                     <div class="row">
                         <div v-for="item in 2" class="col-6">
                             AppCard carusel
@@ -22,12 +22,18 @@
 </template>
 
 <script>
+import { store } from '../../data/store';
 import AppCard from './AppCard.vue';
 import AppTitleSection from './AppTitleSection.vue';
 
 export default {
     name: "AppOurProcess",
-    components: { AppTitleSection, AppCard }
+    components: { AppTitleSection, AppCard },
+    data() {
+        return {
+            store
+        }
+    }
 }
 </script>
 

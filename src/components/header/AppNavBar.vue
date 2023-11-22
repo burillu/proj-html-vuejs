@@ -30,7 +30,7 @@ export default {
         src: String,
         classTextColor: String,
         tabsArray: Array,
-        btn: Array
+        btn: Object
     }
 
 }
