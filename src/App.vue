@@ -24,4 +24,4 @@ export default {
 <style lang="scss" scoped></style>
 
 
-<!-- Milestone 0 completed -->
+<!-- Milestone 1 completed -->
