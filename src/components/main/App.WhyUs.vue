@@ -3,8 +3,12 @@
         <div class="container py-5">
             <AppTitleSection :sectionProps="store.titleSection.whyUs" />
             <div class="row row-cols-5 flex-nowrap">
-                <div class="col" v-for="(item, index) in store.sponsorList">
-                    <img :src="store.sponsorList[index + counterSlide]" :alt="`sponsor${index + 1}`">
+                <div class="col" v-for="(item, index) in store.sponsorList" ref="sponsor">
+                    <!-- senza counterSlide -->
+                    <img :src="store.sponsorList[index]" :alt="`sponsor${index + 1}`">
+                    <!-- con counterSlide -->
+                    <!-- <img :src="store.sponsorList[index + counterSlide]" :alt="`sponsor${index + 1}`"> -->
+
                 </div>
             </div>
 
@@ -22,7 +26,7 @@ export default {
     data() {
         return {
             store,
-            counterSlide: 0
+            counterSlide: 2
         }
     },
     methods: {
@@ -31,19 +35,30 @@ export default {
             if (this.counterSlide < 6) {
                 this.counterSlide++
             } else if (this.counterSlide === 6) {
-                this.counterSlide = 0;
+                this.counterSlide = 1;
             }
-            console.log(this.counterSlide);
-        }
+            // this.$refs.sponsor[this.counterSlide].scrollIntoView({ behavior: "smooth", block: "end", inline: "nearest" });
+
+        },
+
+    },
+    mounted() {
+
     },
     created() {
-        setInterval(this.sliderSponsor, 1500)
+
+
     }
 }
 </script>
 
 <style lang="scss" scoped>
-div.row {
+div.container {
     overflow: hidden;
+}
+
+div.row {
+    //overflow: hidden;
+    transform: translateX(-228px);
 }
 </style>
