@@ -122,6 +122,7 @@ export const store = reactive({
         },
 
 
-    }
+    },
+    sponsorList: ['./images/sponsor1.png', './images/sponsor2.png', './images/sponsor3.png', './images/sponsor4.png', './images/sponsor5.png', './images/sponsor6.png', './images/sponsor1.png', './images/sponsor2.png', './images/sponsor3.png', './images/sponsor4.png', './images/sponsor5.png', './images/sponsor6.png']
 
 })

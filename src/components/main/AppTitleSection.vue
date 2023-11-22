@@ -18,7 +18,7 @@ export default {
         sectionProps: Object,
     },
     created() {
-        console.log(this.sectionProps);
+        //console.log(this.sectionProps);
     }
 }
 </script>
