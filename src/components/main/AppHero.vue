@@ -36,7 +36,7 @@ section {
 }
 
 .img-shape {
-    //width: 100%;
+    width: 100%;
     height: 160px;
     position: absolute;
     bottom: 0;
