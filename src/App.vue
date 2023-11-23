@@ -1,23 +1,34 @@
 <template>
-  <header>
-    <AppHeader />
-  </header>
-  <main>
-    <AppMain />
-  </main>
-  <footer>
-    <AppFooter />
-  </footer>
+  <div v-if="loader">
+    <AppLoaderIntro />
+  </div>
+  <div v-else>
+    <header>
+      <AppHeader />
+    </header>
+    <main>
+      <AppMain />
+    </main>
+    <footer>
+      <AppFooter />
+    </footer>
+  </div>
 </template>
 
 <script>
 import AppFooter from './components/footer/AppFooter.vue';
 import AppHeader from './components/header/AppHeader.vue';
+import AppLoaderIntro from './components/main/AppLoaderIntro.vue';
 import AppMain from './components/main/AppMain.vue';
 
 export default {
   name: "App",
-  components: { AppMain, AppHeader, AppFooter }
+  components: { AppMain, AppHeader, AppFooter, AppLoaderIntro },
+  data() {
+    return {
+      loader: false
+    }
+  }
 }
 </script>
 

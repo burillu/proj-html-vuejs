@@ -6,7 +6,7 @@
             <p class="card-text">{{ cardProps.text }}</p>
             <ul class="nav justify-content-center gap-2">
                 <li><a href="#"><i class="fa-brands fa-facebook-f"></i></a></li>
-                <li><a href="#"><i class="fa-brands fa-twitter"></i></a></li>
+                <li><a href="#"><i class="fa-brands fa-x-twitter"></i></a></li>
                 <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
             </ul>
 
