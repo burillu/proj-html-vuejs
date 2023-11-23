@@ -78,6 +78,7 @@ body {
 .my-btn {
   border-radius: 20px;
   padding: 5px 15px;
+  border: none;
 }
 
 .my-btn-light {
@@ -94,4 +95,33 @@ body {
   text-align: center;
   position: relative;
   z-index: 20;
+}
+
+// Vue Animations
+.v-enter-active,
+.v-leave-active {
+  transition: opacity 0.5s ease;
+}
+
+.v-enter-from,
+.v-leave-to {
+  opacity: 0;
+}
+
+//animations
+
+
+
+@keyframes fly-loader {
+  0% {
+    transform: translate(0, 0);
+  }
+
+  100% {
+    transform: translate(100px, -30px);
+  }
+
+  // 100% {
+  //   opacity: 50%;
+  // }
 }

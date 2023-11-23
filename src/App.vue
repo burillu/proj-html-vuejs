@@ -1,18 +1,20 @@
 <template>
-  <div v-if="loader">
-    <AppLoaderIntro />
-  </div>
-  <div v-else>
-    <header>
-      <AppHeader />
-    </header>
-    <main>
-      <AppMain />
-    </main>
-    <footer>
-      <AppFooter />
-    </footer>
-  </div>
+  <Transition>
+    <div v-if="loader">
+      <AppLoaderIntro />
+    </div>
+    <div v-else>
+      <header>
+        <AppHeader />
+      </header>
+      <main>
+        <AppMain />
+      </main>
+      <footer>
+        <AppFooter />
+      </footer>
+    </div>
+  </Transition>
 </template>
 
 <script>
@@ -26,8 +28,17 @@ export default {
   components: { AppMain, AppHeader, AppFooter, AppLoaderIntro },
   data() {
     return {
-      loader: false
+      loader: true
     }
+  },
+  methods: {
+    stopLoader() {
+      this.loader = false;
+    }
+
+  },
+  mounted() {
+    setTimeout(this.stopLoader, 2000);
   }
 }
 </script>
