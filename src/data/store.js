@@ -182,6 +182,27 @@ export const store = reactive({
             //per carosello automatico aggiungere altri oggetti
         ],
 
+        //aggiungere stats
+        stats: [
+            {
+                data: 700,
+                text: 'Projects done'
+            },
+            {
+                data: 250,
+                text: 'Happy Clients'
+            },
+            {
+                data: 25,
+                text: 'Team Members'
+            },
+            {
+                data: 12,
+                text: 'Years on the market'
+            },
+
+        ]
+
 
 
     }
