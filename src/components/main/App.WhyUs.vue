@@ -61,7 +61,7 @@ div.row {
     //overflow: hidden;
     animation-name: sliding-sponsor;
     animation-duration: 15s;
-    animation: linear;
+    animation-timing-function: linear;
     animation-iteration-count: infinite;
 }
 </style>
