@@ -25,7 +25,7 @@
             <div class="man-right">
                 <img :src="'./images/right-man.png'" alt="right-man">
             </div>
-            <div class="title-section pt-5">
+            <div class="title-section py-5">
                 <span class="my-text-contrast fw-bold">
                     Imagine, Create, Esperience
                 </span>
@@ -91,7 +91,7 @@ img {
 .light {
     width: 120px;
     position: absolute;
-    top: 150px;
+    top: 120px;
     right: 150px;
 }
 
@@ -119,7 +119,7 @@ img {
 .man-right {
     width: 250px;
     position: absolute;
-    top: 200px;
+    top: 170px;
     right: 0;
 }
 
