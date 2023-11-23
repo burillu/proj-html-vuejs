@@ -1,10 +1,9 @@
 <template>
-    <div class="card">
-        <img :src="'./images/middle.png'" class="card-img-top" alt="middle">
+    <div class="card text-center py-2 rounded-4">
+        <img :src="cardProps.image" class="card-img-top" :alt="cardProps.title">
         <div class="card-body">
-            <h5 class="card-title">Card title</h5>
-            <p class="card-text">Some quick example text to build on the card title and make up the
-                bulk of the card's content.</p>
+            <h5 class="card-title">{{ cardProps.title }}</h5>
+            <p class="card-text">{{ cardProps.text }}</p>
 
         </div>
     </div>
@@ -12,8 +11,16 @@
 
 <script>
 export default {
-    name: 'AppCard'
+    name: 'AppCard',
+    props: {
+        cardProps: Object
+    }
 }
 </script>
 
-<style lang="scss" scoped></style>
+<style lang="scss" scoped>
+img {
+    width: 50%;
+    margin: 0 auto;
+}
+</style>

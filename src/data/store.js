@@ -123,6 +123,30 @@ export const store = reactive({
 
 
     },
-    sponsorList: ['./images/sponsor1.png', './images/sponsor2.png', './images/sponsor3.png', './images/sponsor4.png', './images/sponsor5.png', './images/sponsor6.png', './images/sponsor1.png', './images/sponsor2.png', './images/sponsor3.png', './images/sponsor4.png', './images/sponsor5.png', './images/sponsor6.png']
+    sponsorList: ['./images/sponsor1.png', './images/sponsor2.png', './images/sponsor3.png', './images/sponsor4.png', './images/sponsor5.png', './images/sponsor6.png', './images/sponsor1.png', './images/sponsor2.png', './images/sponsor3.png', './images/sponsor4.png', './images/sponsor5.png', './images/sponsor6.png'],
+    cardContent: {
+        present: [
+            {
+                image: './images/smart1.png',
+                title: '3D modeling',
+                text: 'We constantly ask questions. It helps us shape your story and deliver the results you crave. Yep, we\'ll drill deep to deliver above and beyond your expectations.',
+                classBg: 'String'
+            },
+            {
+                image: './images/smart2.png',
+                title: 'Collaboration',
+                text: 'We constantly ask questions. It helps us shape your story and deliver the results you crave. Yep, we\'ll drill deep to deliver above and beyond your expectations.',
+                classBg: 'String'
+            },
+            {
+                image: './images/smart3.png',
+                title: 'Creativity',
+                text: 'We constantly ask questions. It helps us shape your story and deliver the results you crave. Yep, we\'ll drill deep to deliver above and beyond your expectations.',
+                classBg: 'String'
+            },
+        ]
+
+
+    }
 
 })

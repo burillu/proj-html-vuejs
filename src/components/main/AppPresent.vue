@@ -10,8 +10,8 @@
                 <div class="col d-flex flex-column align-items-start">
                     <AppTitleSection :sectionProps="store.titleSection.present" />
                     <div class="row">
-                        <div v-for="item in 3" class="col-4">
-                            <AppCard />
+                        <div v-for="item in store.cardContent.present" class="col-4">
+                            <AppCard :cardProps="item" />
                         </div>
 
                     </div>
