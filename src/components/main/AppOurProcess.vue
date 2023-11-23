@@ -52,7 +52,13 @@ div.col-6 {
         //width: 120%;
         left: -70%;
         top: 0;
+        transition: all 1s;
+        z-index: 100;
 
+    }
+
+    img:hover {
+        transform: translate(50px, 0);
     }
 }
 </style>
