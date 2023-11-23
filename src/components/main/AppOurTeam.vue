@@ -3,8 +3,8 @@
         <div class="container">
             <AppTitleSection :sectionProps="store.titleSection.ourTeam" />
             <div class="row justify-content-between">
-                <div v-for="items in 3" class="col-3">
-                    <AppCard />
+                <div v-for="items in store.cardContent.ourTeam" class="col-3">
+                    <AppCardTeam :cardProps="items" />
                 </div>
             </div>
         </div>
@@ -13,12 +13,12 @@
 
 <script>
 import { store } from '../../data/store';
-import AppCard from './AppCard.vue';
+import AppCardTeam from './AppCardTeam.vue';
 import AppTitleSection from './AppTitleSection.vue';
 
 export default {
     name: "AppOurTeam",
-    components: { AppTitleSection, AppCard },
+    components: { AppTitleSection, AppCardTeam },
     data() {
         return {
             store
