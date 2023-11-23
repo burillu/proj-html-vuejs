@@ -18,17 +18,19 @@
             </div>
 
         </div>
+        <AppRocket />
     </section>
 </template>
 
 <script>
 import { store } from '../../data/store';
 import AppCard from './AppCard.vue';
+import AppRocket from './AppRocket.vue';
 import AppTitleSection from './AppTitleSection.vue';
 
 export default {
     name: "AppOurProcess",
-    components: { AppTitleSection, AppCard },
+    components: { AppTitleSection, AppCard, AppRocket },
     data() {
         return {
             store
@@ -38,18 +40,19 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-section {
-    height: 100vh;
-}
+// section {
+//     height: 100vh;
+// }
 
-div.container {
+div.col-6 {
     position: relative;
 
     img {
-        position: relative;
-        width: 120%;
-        left: -60%;
-        bottom: 0;
+        position: absolute;
+        //width: 120%;
+        left: -70%;
+        top: 0;
+
     }
 }
 </style>
