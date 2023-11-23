@@ -19,11 +19,17 @@
             <div class="star-right">
                 <img :src="'./images/dots-right.png'" alt="dots-right">
             </div>
+            <div class="man-left">
+                <img :src="'./images/left-man.png'" alt="left-man">
+            </div>
+            <div class="man-right">
+                <img :src="'./images/right-man.png'" alt="right-man">
+            </div>
             <div class="title-section pt-5">
                 <span class="my-text-contrast fw-bold">
                     Imagine, Create, Esperience
                 </span>
-                <h1 class="fw-bold">We Animate <br>
+                <h1 class="fw-bold display-2">We Animate <br>
                     With Ninja-Like Precision</h1>
                 <span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat, incidunt?</span>
                 <div class="py-5">
@@ -62,16 +68,16 @@ img {
 }
 
 .globe1 {
-    width: 150px;
+    width: 120px;
     position: absolute;
-    top: 100px;
-    left: 100px;
+    top: 60px;
+    left: 120px;
 }
 
 .globe2 {
-    width: 100px;
+    width: 80px;
     position: absolute;
-    top: 160px;
+    top: 70px;
     right: 400px;
 }
 
@@ -100,6 +106,20 @@ img {
     width: 50%;
     position: absolute;
     top: 50px;
+    right: 0;
+}
+
+.man-left {
+    width: 250px;
+    position: absolute;
+    top: 170px;
+    left: 0;
+}
+
+.man-right {
+    width: 250px;
+    position: absolute;
+    top: 200px;
     right: 0;
 }
 
