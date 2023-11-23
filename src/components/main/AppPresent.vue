@@ -7,9 +7,9 @@
                         <img src="../../assets/images/smarttwo.png" alt="smart">
                     </div>
                 </div>
-                <div class="col d-flex flex-column align-items-start">
+                <div class="col-9 d-flex flex-column align-items-start">
                     <AppTitleSection :sectionProps="store.titleSection.present" />
-                    <div class="row">
+                    <div class="row w-100 justify-content-between">
                         <div v-for="item in store.cardContent.present" class="col-4">
                             <AppCard :cardProps="item" />
                         </div>
