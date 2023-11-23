@@ -125,3 +125,33 @@ body {
   //   opacity: 50%;
   // }
 }
+
+@keyframes rotating-globe {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes rotating-light {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(10deg);
+  }
+}
+
+@keyframes fly-man {
+  from {
+    transform: translate(0, 0);
+  }
+
+  to {
+    transform: translate(0, -50px);
+  }
+}

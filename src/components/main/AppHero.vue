@@ -72,6 +72,10 @@ img {
     position: absolute;
     top: 60px;
     left: 120px;
+    animation-name: rotating-globe;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
 }
 
 .globe2 {
@@ -79,6 +83,10 @@ img {
     position: absolute;
     top: 70px;
     right: 400px;
+    animation-name: rotating-globe;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
 }
 
 .globe3 {
@@ -93,6 +101,11 @@ img {
     position: absolute;
     top: 120px;
     right: 150px;
+    animation-name: rotating-light;
+    animation-duration: 1s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
 }
 
 .star-left {
@@ -114,6 +127,11 @@ img {
     position: absolute;
     top: 170px;
     left: 0;
+    animation-name: fly-man;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    animation-direction: alternate;
 }
 
 .man-right {
@@ -121,6 +139,11 @@ img {
     position: absolute;
     top: 170px;
     right: 0;
+    animation-name: fly-man;
+    animation-duration: 4.2s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    animation-direction: alternate;
 }
 
 .img-shape {
