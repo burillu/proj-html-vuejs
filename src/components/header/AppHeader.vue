@@ -1,5 +1,5 @@
 <template>
-    <div class="my-bg-primary ">
+    <div>
         <AppNavBar :classTextColor="store.navBarHeader.classText" :src="store.navBarHeader.srcLogo"
             :tabsArray="store.navBarHeader.tabs" :btn="store.navBarHeader.btn" />
 
@@ -23,4 +23,10 @@ export default {
 }
 </script>
 
-<style lang="scss" scoped></style>
+<style lang="scss" scoped>
+div {
+    margin-bottom: -60px;
+    position: relative;
+    z-index: 100;
+}
+</style>
