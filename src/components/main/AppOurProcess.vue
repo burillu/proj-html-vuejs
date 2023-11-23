@@ -8,9 +8,9 @@
                 <div class="col-6">
                     <AppTitleSection :sectionProps="store.titleSection.ourProcess" />
                     <div class="row">
-                        <div v-for="item in 2" class="col-6">
-                            AppCard carusel
-                            <AppCard />
+                        <div v-for="item in store.cardContent.ourProcess" class="col-6">
+
+                            <AppCard :cardProps="item" />
                         </div>
 
                     </div>
