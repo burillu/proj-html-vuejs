@@ -144,7 +144,23 @@ export const store = reactive({
                 text: 'We constantly ask questions. It helps us shape your story and deliver the results you crave. Yep, we\'ll drill deep to deliver above and beyond your expectations.',
                 classBg: 'String'
             },
-        ]
+        ],
+        ourProcess: [
+            {
+                image: './images/process1.png',
+                title: 'Scripting',
+                text: 'We’ll take your idea and create a technical script which consists of action notes and animation descriptions',
+                classBg: 'String'
+            },
+            {
+                image: './images/process2.png',
+                title: 'Pre- Production',
+                text: 'We’ll take your idea and create a technical script which consists of action notes and animation descriptions',
+                classBg: 'String'
+            },
+            //per carosello automatico aggiungere altri oggetti
+        ],
+
 
 
     }
