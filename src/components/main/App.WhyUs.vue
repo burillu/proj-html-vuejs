@@ -59,7 +59,10 @@ div.container {
 
 div.row {
     //overflow: hidden;
-    transform: translateX(-228px);
+    animation-name: sliding-sponsor;
+    animation-duration: 15s;
+    animation: linear;
+    animation-iteration-count: infinite;
 }
 </style>
 
