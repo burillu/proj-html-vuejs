@@ -20,17 +20,19 @@
             </div>
 
         </div>
+        <AppRocket />
     </section>
 </template>
 
 <script>
 import { store } from '../../data/store';
 import AppCard from './AppCard.vue';
+import AppRocket from './AppRocket.vue';
 import AppTitleSection from './AppTitleSection.vue';
 
 export default {
     name: "AppPresent",
-    components: { AppTitleSection, AppCard },
+    components: { AppTitleSection, AppCard, AppRocket },
     data() {
         return {
             store
@@ -46,7 +48,7 @@ div.card {
 
 section {
     position: relative;
-    height: 100vh;
+    //height: 100vh;
 
 }
 
@@ -57,8 +59,5 @@ section {
         top: -30%;
         width: 70%;
     }
-
-
-
 }
 </style>
