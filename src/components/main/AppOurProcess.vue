@@ -13,6 +13,16 @@
                             <AppCard :cardProps="item" />
                         </div>
 
+                        <div class="d-flex gap-2 py-2">
+                            <div class="d-flex justify-content-center align-items-center my-btn-slider">
+                                <i class="fa-solid fa-arrow-left"></i>
+                            </div>
+                            <div class="d-flex justify-content-center align-items-center my-btn-slider">
+                                <i class="fa-solid fa-arrow-right"></i>
+                            </div>
+
+                        </div>
+
                     </div>
                 </div>
             </div>

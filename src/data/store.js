@@ -179,6 +179,24 @@ export const store = reactive({
                 text: '2d animator & Compositor',
                 classBg: 'my-bg-quaternary'
             },
+            {
+                image: './images/team1.png',
+                title: 'Robert Coleman',
+                text: 'Owner & Creative Director',
+                classBg: 'my-bg-quaternary'
+            },
+            {
+                image: './images/team2.png',
+                title: 'Don Woods',
+                text: 'Administrator',
+                classBg: 'my-bg-quaternary'
+            },
+            {
+                image: './images/team4.png',
+                title: 'Tomas Nash',
+                text: '2d animator & Compositor',
+                classBg: 'my-bg-quaternary'
+            },
             //per carosello automatico aggiungere altri oggetti
         ],
 
