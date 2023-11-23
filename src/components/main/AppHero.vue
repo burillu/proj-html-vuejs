@@ -13,6 +13,12 @@
             <div class="light">
                 <img :src="'./images/light.png'" alt="light">
             </div>
+            <div class="star-left">
+                <img :src="'./images/dots-left.png'" alt="dots-left">
+            </div>
+            <div class="star-right">
+                <img :src="'./images/dots-right.png'" alt="dots-right">
+            </div>
             <div class="title-section pt-5">
                 <span class="my-text-contrast fw-bold">
                     Imagine, Create, Esperience
@@ -72,7 +78,7 @@ img {
 .globe3 {
     width: 280px;
     position: absolute;
-    top: -30%;
+    top: -25%;
     right: 50%;
 }
 
@@ -81,6 +87,20 @@ img {
     position: absolute;
     top: 150px;
     right: 150px;
+}
+
+.star-left {
+    width: 50%;
+    position: absolute;
+    top: 50px;
+    left: 0;
+}
+
+.star-right {
+    width: 50%;
+    position: absolute;
+    top: 50px;
+    right: 0;
 }
 
 .img-shape {
@@ -94,7 +114,7 @@ img {
 }
 
 .my-img-middle {
-    width: 100%;
+    width: 80%;
     // padding-bottom: 160px;
     position: relative;
     z-index: 10;
