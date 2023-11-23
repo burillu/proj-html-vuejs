@@ -40,6 +40,7 @@ export default {
 section {
     height: 70vh;
     position: relative;
+    overflow: hidden;
 }
 
 div.container {

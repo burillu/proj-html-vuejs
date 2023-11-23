@@ -38,6 +38,7 @@ export default {
 <style lang="scss" scoped>
 section {
     position: relative;
+    overflow: hidden;
 }
 
 .input-container {
